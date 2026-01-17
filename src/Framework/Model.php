@@ -49,20 +49,12 @@ abstract class Model
     protected array $fillable = [];
 
     /**
-     * Database connection instance
-     * 
-     * @var Database
-     */
-    protected Database $database;
-
-    /**
      * Constructor
      * 
      * @param Database $database Database connection instance
      */
     public function __construct(protected Database $database)
     {
-        $this->database = $database;
     }
 
     /**
